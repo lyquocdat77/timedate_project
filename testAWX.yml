@@ -1,0 +1,6 @@
+---
+- name: Test output
+  hosts: all
+  tasks:
+    - debug:
+        msg: "AWX is working!"
