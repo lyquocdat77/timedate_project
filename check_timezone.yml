@@ -1,4 +1,3 @@
-```
 - name: Check date, time and timezone on host
   hosts: all
   gather_facts: false
