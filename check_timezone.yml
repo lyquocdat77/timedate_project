@@ -1,0 +1,12 @@
+```yaml
+- name: Check date, time and timezone on host
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Get current date, time and timezone
+      ansible.builtin.command: date
+      register: datetime_output
+    - name: Show date and time
+      debug:
+        var: datetime_output.stdout
+```
