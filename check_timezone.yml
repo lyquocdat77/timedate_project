@@ -1,4 +1,4 @@
-```yaml
+```
 - name: Check date, time and timezone on host
   hosts: all
   gather_facts: false
@@ -9,4 +9,4 @@
     - name: Show date and time
       debug:
         var: datetime_output.stdout
-```
+
